@@ -3,15 +3,15 @@ window.addEventListener('load', function(){
   const pullDownButton = document.getElementById("lists");
   
   pullDownButton.addEventListener('mouseover', function() {
-    console.log("マウスオーバーされた");
+    pullDownButton.setAttribute("style", "background-color:blue;");
   });
 
   pullDownButton.addEventListener('mouseout', function(){
-    console.log("マウスアウトされた");
+    pullDownButton.removeAttribute("style");
   });
 
   pullDownButton.addEventListener('click', function(){
-    console.log("クリックした");
+    pullDownButton.setAttribute("style", "background-color:green;");
   });
   
 });
